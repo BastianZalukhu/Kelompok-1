@@ -23,7 +23,7 @@ class Apalah extends StatelessWidget {
                     child: Stack(
                       children: [
                         Container(
-                          child: Image.asset('assets/gambar.png'),
+                          child: Image.asset('assets/gambar1.png'),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(10),

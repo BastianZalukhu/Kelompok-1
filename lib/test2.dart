@@ -182,7 +182,7 @@ class _HomePageState extends State<HomePage> {
                             Container(
                               width: 250,
                               height: 250,
-                              child: Image.asset('assets/gambar.png'),
+                              child: Image.asset('assets/gambar4.png'),
                             ),
                             Positioned(
                               top: 160,
