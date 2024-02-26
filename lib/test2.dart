@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                                 child: const Center(
                                     child: Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text('Vacation'),
+                                  child: Text('Locations'),
                                 )),
                               ),
                             ),
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                                 child: const Center(
                                     child: Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text('Vacation'),
+                                  child: Text('Hotels'),
                                 )),
                               ),
                             ),
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                                 child: const Center(
                                     child: Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text('Vacation'),
+                                  child: Text('Food'),
                                 )),
                               ),
                             ),
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                                 child: const Center(
                                     child: Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text('Vacation'),
+                                  child: Text('Adventure'),
                                 )),
                               ),
                             ),
@@ -180,19 +180,19 @@ class _HomePageState extends State<HomePage> {
                         Stack(
                           children: [
                             Container(
-                              width: 250,
-                              height: 250,
                               child: Image.asset('assets/gambar4.png'),
                             ),
                             Positioned(
                               top: 160,
-                              left: 20,
+                              left: 10,
                               child: Column(children: [
                                 Container(
                                   margin: EdgeInsets.only(right: 100),
                                   child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.grey.shade900,
+                                        minimumSize: Size(30, 30),
+                                        backgroundColor:
+                                            Color.fromARGB(255, 137, 137, 137),
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(15))),
@@ -205,20 +205,22 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                                 const SizedBox(
-                                  height: 5,
+                                  height: 7,
                                 ),
                                 Container(
+                                  margin: EdgeInsets.only(right: 50),
                                   child: Row(
                                     children: [
                                       Container(
                                         child: ElevatedButton(
                                             style: ElevatedButton.styleFrom(
+                                                minimumSize: Size(30, 30),
                                                 shape: RoundedRectangleBorder(
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             15)),
-                                                backgroundColor:
-                                                    Colors.grey.shade900),
+                                                backgroundColor: Color.fromARGB(
+                                                    255, 137, 137, 137)),
                                             onPressed: () {},
                                             child: Row(
                                               children: const [
@@ -232,6 +234,7 @@ class _HomePageState extends State<HomePage> {
                                                       EdgeInsets.only(left: 5),
                                                   child: Text('4.1',
                                                       style: TextStyle(
+                                                          fontSize: 10,
                                                           color: Colors.white)),
                                                 )
                                               ],
@@ -242,12 +245,12 @@ class _HomePageState extends State<HomePage> {
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
-                                                  left: 80),
+                                                  left: 40),
                                               child: ElevatedButton(
                                                   style:
                                                       ElevatedButton.styleFrom(
                                                           minimumSize:
-                                                              Size(50, 50),
+                                                              Size(30, 30),
                                                           shape: CircleBorder(
                                                               side: BorderSide
                                                                   .none),
@@ -257,6 +260,7 @@ class _HomePageState extends State<HomePage> {
                                                   child: Icon(
                                                     Icons.favorite,
                                                     color: Colors.red,
+                                                    size: 15,
                                                   )),
                                             )
                                           ],
@@ -296,11 +300,15 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                           children: [
                             Container(
-                              child: Image.asset('assets/gambar2.png'),
+                              child: Image.asset('assets/gambar3.png'),
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [Text('Apalah')],
+                            Container(
+                              margin: EdgeInsets.only(right: 60),
+                              child: Text(
+                                'Explore Aspen',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w400, fontSize: 15),
+                              ),
                             )
                           ],
                         )),
@@ -308,10 +316,14 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             children: [
                               Container(
-                                  child: Image.asset('assets/gambar1.png')),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [Text('Apalah')],
+                                  margin: EdgeInsets.only(right: 50),
+                                  child: Image.asset('assets/gambar2.png')),
+                              Container(
+                                margin: EdgeInsets.only(right: 80),
+                                child: Text('Luxurious Aspen',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 15)),
                               )
                             ],
                           ),
