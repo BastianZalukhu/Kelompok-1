@@ -174,106 +174,222 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(
                       height: 20,
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              child: Image.asset('assets/gambar4.png'),
-                            ),
-                            Positioned(
-                              top: 160,
-                              left: 10,
-                              child: Column(children: [
-                                Container(
-                                  margin: EdgeInsets.only(right: 100),
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                        minimumSize: Size(30, 30),
-                                        backgroundColor:
-                                            Color.fromARGB(255, 137, 137, 137),
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(15))),
-                                    onPressed: () {},
-                                    child: const Text(
-                                      'Alley Palace',
-                                      style: TextStyle(
-                                          color: Colors.white, fontSize: 15),
+                    Container(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                child: Image.asset('assets/gambar4.png'),
+                              ),
+                              Positioned(
+                                top: 160,
+                                left: 10,
+                                child: Column(children: [
+                                  Container(
+                                    margin: EdgeInsets.only(right: 100),
+                                    child: ElevatedButton(
+                                      style: ElevatedButton.styleFrom(
+                                          minimumSize: Size(30, 30),
+                                          backgroundColor: Color.fromARGB(
+                                              255, 137, 137, 137),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15))),
+                                      onPressed: () {},
+                                      child: const Text(
+                                        'Alley Palace',
+                                        style: TextStyle(
+                                            color: Colors.white, fontSize: 15),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                const SizedBox(
-                                  height: 7,
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(right: 50),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        child: ElevatedButton(
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.only(right: 50),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          child: ElevatedButton(
+                                              style: ElevatedButton.styleFrom(
+                                                  minimumSize: Size(30, 30),
+                                                  shape: RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              15)),
+                                                  backgroundColor:
+                                                      Color.fromARGB(
+                                                          255, 137, 137, 137)),
+                                              onPressed: () {},
+                                              child: Row(
+                                                children: const [
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 20,
+                                                    color: Colors.amber,
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5),
+                                                    child: Text('4.1',
+                                                        style: TextStyle(
+                                                            fontSize: 13,
+                                                            color:
+                                                                Colors.white)),
+                                                  )
+                                                ],
+                                              )),
+                                        ),
+                                        Container(
+                                          child: Row(
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 40),
+                                                child: ElevatedButton(
+                                                    style: ElevatedButton
+                                                        .styleFrom(
+                                                            minimumSize: Size(
+                                                                30, 30),
+                                                            shape: CircleBorder(
+                                                                side: BorderSide
+                                                                    .none),
+                                                            backgroundColor:
+                                                                Colors.white),
+                                                    onPressed: () {},
+                                                    child: Icon(
+                                                      Icons.favorite,
+                                                      color: Colors.red,
+                                                      size: 15,
+                                                    )),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ]),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Stack(
+                                  children: [
+                                    Container(
+                                      child: Image.asset('assets/gambar4.png'),
+                                    ),
+                                    Positioned(
+                                      top: 160,
+                                      left: 10,
+                                      child: Column(children: [
+                                        Container(
+                                          margin: EdgeInsets.only(right: 100),
+                                          child: ElevatedButton(
                                             style: ElevatedButton.styleFrom(
                                                 minimumSize: Size(30, 30),
+                                                backgroundColor: Color.fromARGB(
+                                                    255, 137, 137, 137),
                                                 shape: RoundedRectangleBorder(
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            15)),
-                                                backgroundColor: Color.fromARGB(
-                                                    255, 137, 137, 137)),
+                                                            15))),
                                             onPressed: () {},
-                                            child: Row(
-                                              children: const [
-                                                Icon(
-                                                  Icons.star,
-                                                  size: 20,
-                                                  color: Colors.amber,
-                                                ),
-                                                Padding(
-                                                  padding:
-                                                      EdgeInsets.only(left: 5),
-                                                  child: Text('4.1',
-                                                      style: TextStyle(
-                                                          fontSize: 10,
-                                                          color: Colors.white)),
-                                                )
-                                              ],
-                                            )),
-                                      ),
-                                      Container(
-                                        child: Row(
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  left: 40),
-                                              child: ElevatedButton(
-                                                  style:
-                                                      ElevatedButton.styleFrom(
-                                                          minimumSize:
-                                                              Size(30, 30),
-                                                          shape: CircleBorder(
-                                                              side: BorderSide
-                                                                  .none),
-                                                          backgroundColor:
-                                                              Colors.white),
-                                                  onPressed: () {},
-                                                  child: Icon(
-                                                    Icons.favorite,
-                                                    color: Colors.red,
-                                                    size: 15,
-                                                  )),
-                                            )
-                                          ],
+                                            child: const Text(
+                                              'Alley Palace',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 15),
+                                            ),
+                                          ),
                                         ),
-                                      )
-                                    ],
-                                  ),
+                                        const SizedBox(
+                                          height: 7,
+                                        ),
+                                        Container(
+                                          margin: EdgeInsets.only(right: 50),
+                                          child: Row(
+                                            children: [
+                                              Container(
+                                                child: ElevatedButton(
+                                                    style: ElevatedButton.styleFrom(
+                                                        minimumSize:
+                                                            Size(30, 30),
+                                                        shape: RoundedRectangleBorder(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        15)),
+                                                        backgroundColor:
+                                                            Color.fromARGB(255,
+                                                                137, 137, 137)),
+                                                    onPressed: () {},
+                                                    child: Row(
+                                                      children: const [
+                                                        Icon(
+                                                          Icons.star,
+                                                          size: 20,
+                                                          color: Colors.amber,
+                                                        ),
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                  left: 5),
+                                                          child: Text('4.1',
+                                                              style: TextStyle(
+                                                                  fontSize: 13,
+                                                                  color: Colors
+                                                                      .white)),
+                                                        )
+                                                      ],
+                                                    )),
+                                              ),
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 40),
+                                                      child: ElevatedButton(
+                                                          style: ElevatedButton.styleFrom(
+                                                              minimumSize:
+                                                                  Size(30, 30),
+                                                              shape: CircleBorder(
+                                                                  side:
+                                                                      BorderSide
+                                                                          .none),
+                                                              backgroundColor:
+                                                                  Colors.white),
+                                                          onPressed: () {},
+                                                          child: Icon(
+                                                            Icons.favorite,
+                                                            color: Colors.red,
+                                                            size: 15,
+                                                          )),
+                                                    )
+                                                  ],
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ]),
+                                    ),
+                                  ],
                                 )
-                              ]),
+                              ],
                             ),
-                          ],
-                        )
-                      ],
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(
                       height: 20,
@@ -296,40 +412,55 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                            child: Column(
-                          children: [
-                            Container(
-                              child: Image.asset('assets/gambar3.png'),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(right: 60),
-                              child: Text(
-                                'Explore Aspen',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w400, fontSize: 15),
-                              ),
-                            )
-                          ],
-                        )),
-                        Container(
-                          child: Column(
-                            children: [
-                              Container(
-                                  margin: EdgeInsets.only(right: 50),
-                                  child: Image.asset('assets/gambar2.png')),
-                              Container(
-                                margin: EdgeInsets.only(right: 80),
-                                child: Text('Luxurious Aspen',
+                        Card(
+                          elevation: 10,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                                child: Column(
+                              children: [
+                                Container(
+                                  child: Image.asset('assets/gambar3.png'),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(right: 60),
+                                  child: Text(
+                                    'Explore Aspen',
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 15)),
-                              )
-                            ],
+                                        fontSize: 15),
+                                  ),
+                                )
+                              ],
+                            )),
                           ),
-                        )
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Card(
+                          elevation: 10,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                      child: Image.asset('assets/gambar2.png')),
+                                  Container(
+                                    margin: EdgeInsets.only(right: 45),
+                                    child: Text('Luxurious Aspen',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 15)),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
