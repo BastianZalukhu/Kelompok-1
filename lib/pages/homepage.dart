@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/components/card_popular.dart';
 import 'package:flutter_application_3/components/category_homepage.dart';
 import 'package:flutter_application_3/components/header_hompage.dart';
 import 'package:flutter_application_3/components/search_homepage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,234 +28,20 @@ class _HomePageState extends State<HomePage> {
                 SearchHomePage(),
                 SizedBox(height: 20),
                 CategoryHomePage(),
-                SizedBox(height: 20),
+                SizedBox(height: 30),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
                       'Popular',
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.w800),
+                      style: GoogleFonts.montserrat(
+                          fontSize: 25, fontWeight: FontWeight.w700),
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Stack(
-                        children: [
-                          Container(
-                            child: Image.asset('assets/gambar4.png'),
-                          ),
-                          Positioned(
-                            top: 160,
-                            left: 10,
-                            child: Column(children: [
-                              Container(
-                                margin: EdgeInsets.only(right: 100),
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                      minimumSize: Size(30, 30),
-                                      backgroundColor:
-                                          Color.fromARGB(255, 137, 137, 137),
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(15))),
-                                  onPressed: () {},
-                                  child: const Text(
-                                    'Alley Palace',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 7,
-                              ),
-                              Container(
-                                margin: EdgeInsets.only(right: 50),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      child: ElevatedButton(
-                                          style: ElevatedButton.styleFrom(
-                                              minimumSize: Size(30, 30),
-                                              shape: RoundedRectangleBorder(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          15)),
-                                              backgroundColor: Color.fromARGB(
-                                                  255, 137, 137, 137)),
-                                          onPressed: () {},
-                                          child: Row(
-                                            children: const [
-                                              Icon(
-                                                Icons.star,
-                                                size: 20,
-                                                color: Colors.amber,
-                                              ),
-                                              Padding(
-                                                padding:
-                                                    EdgeInsets.only(left: 5),
-                                                child: Text('4.1',
-                                                    style: TextStyle(
-                                                        fontSize: 13,
-                                                        color: Colors.white)),
-                                              )
-                                            ],
-                                          )),
-                                    ),
-                                    Container(
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(left: 40),
-                                            child: ElevatedButton(
-                                                style: ElevatedButton.styleFrom(
-                                                    minimumSize: Size(30, 30),
-                                                    shape: CircleBorder(
-                                                        side: BorderSide.none),
-                                                    backgroundColor:
-                                                        Colors.white),
-                                                onPressed: () {},
-                                                child: Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 15,
-                                                )),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ]),
-                          ),
-                        ],
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 20),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              children: [
-                                Container(
-                                  child: Image.asset('assets/gambar4.png'),
-                                ),
-                                Positioned(
-                                  top: 160,
-                                  left: 10,
-                                  child: Column(children: [
-                                    Container(
-                                      margin: EdgeInsets.only(right: 100),
-                                      child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                            minimumSize: Size(30, 30),
-                                            backgroundColor: Color.fromARGB(
-                                                255, 137, 137, 137),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(15))),
-                                        onPressed: () {},
-                                        child: const Text(
-                                          'Alley Palace',
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 15),
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 7,
-                                    ),
-                                    Container(
-                                      margin: EdgeInsets.only(right: 50),
-                                      child: Row(
-                                        children: [
-                                          Container(
-                                            child: ElevatedButton(
-                                                style: ElevatedButton.styleFrom(
-                                                    minimumSize: Size(30, 30),
-                                                    shape:
-                                                        RoundedRectangleBorder(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        15)),
-                                                    backgroundColor:
-                                                        Color.fromARGB(255, 137,
-                                                            137, 137)),
-                                                onPressed: () {},
-                                                child: Row(
-                                                  children: const [
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 20,
-                                                      color: Colors.amber,
-                                                    ),
-                                                    Padding(
-                                                      padding: EdgeInsets.only(
-                                                          left: 5),
-                                                      child: Text('4.1',
-                                                          style: TextStyle(
-                                                              fontSize: 13,
-                                                              color: Colors
-                                                                  .white)),
-                                                    )
-                                                  ],
-                                                )),
-                                          ),
-                                          Container(
-                                            child: Row(
-                                              children: [
-                                                Padding(
-                                                  padding:
-                                                      const EdgeInsets.only(
-                                                          left: 40),
-                                                  child: ElevatedButton(
-                                                      style: ElevatedButton
-                                                          .styleFrom(
-                                                              minimumSize: Size(
-                                                                  30, 30),
-                                                              shape: CircleBorder(
-                                                                  side:
-                                                                      BorderSide
-                                                                          .none),
-                                                              backgroundColor:
-                                                                  Colors.white),
-                                                      onPressed: () {},
-                                                      child: Icon(
-                                                        Icons.favorite,
-                                                        color: Colors.red,
-                                                        size: 15,
-                                                      )),
-                                                )
-                                              ],
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ]),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 10),
+                CardPopular(),
+                SizedBox(height: 20),
                 Container(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,

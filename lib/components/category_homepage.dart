@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CategoryHomePage extends StatefulWidget {
   const CategoryHomePage({super.key});
@@ -42,7 +43,7 @@ class _CategoryHomePageState extends State<CategoryHomePage> {
                     padding: EdgeInsets.all(8),
                     child: Text(
                       category[index],
-                      style: TextStyle(
+                      style: GoogleFonts.montserrat(
                         color: selectedIndex == index
                             ? Colors.white
                             : Colors.black,
