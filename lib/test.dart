@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/test2.dart';
+import 'package:flutter_application_3/pages/homepage.dart';
 
 class Apalah extends StatelessWidget {
   const Apalah({super.key});
