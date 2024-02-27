@@ -10,6 +10,14 @@ class CardPopular extends StatefulWidget {
 }
 
 class _CardPopularState extends State<CardPopular> {
+  var location = [
+    'Alley Place1',
+    'Alley Place2',
+    'Alley Place3',
+    'Alley Place4',
+    'Alley Place5',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -20,7 +28,7 @@ class _CardPopularState extends State<CardPopular> {
             child: SizedBox(
               height: 280,
               child: ListView.builder(
-                  itemCount: 5,
+                  itemCount: location.length,
                   scrollDirection: Axis.horizontal,
                   shrinkWrap: true,
                   itemBuilder: (BuildContext context, int index) {
@@ -70,7 +78,7 @@ class _CardPopularState extends State<CardPopular> {
                                         child: Row(
                                           children: [
                                             Text(
-                                              'Alley Place',
+                                              location[index],
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 13,
                                                 color: Colors.white,
