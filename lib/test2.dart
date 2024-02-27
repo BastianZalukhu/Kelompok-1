@@ -9,6 +9,14 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+int _currentIndex = 0;
+List<Widget> body = const [
+  Icon(Icons.home),
+  Icon(Icons.place_outlined),
+  Icon(Icons.favorite_border_rounded),
+  Icon(Icons.person),
+];
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -467,6 +475,31 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        items: [
+          BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(
+                Icons.home,
+                color: Colors.blue,
+              ),
+              backgroundColor: Colors.white),
+          BottomNavigationBarItem(
+              label: 'Plane',
+              icon: Icon(Icons.airplane_ticket, color: Colors.blue),
+              backgroundColor: Colors.black),
+          BottomNavigationBarItem(
+              label: 'Favorite',
+              icon: Icon(Icons.favorite_border_outlined, color: Colors.blue),
+              backgroundColor: Colors.white),
+          BottomNavigationBarItem(
+            label: 'Person',
+            icon: Icon(Icons.person, color: Colors.blue),
+            backgroundColor: Colors.white,
+          ),
+        ],
       ),
     );
   }
