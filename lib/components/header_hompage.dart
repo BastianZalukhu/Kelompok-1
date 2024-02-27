@@ -15,18 +15,22 @@ class _HeaderHomePageState extends State<HeaderHomePage> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-          margin: EdgeInsets.only(top: 5),
+          margin: EdgeInsets.only(top: 10),
           child: RichText(
               text: TextSpan(children: <TextSpan>[
             TextSpan(
-                text: 'Explore\n',
-                style:
-                    GoogleFonts.montserrat(fontSize: 15, color: Colors.black)),
+              text: 'Explore\n',
+              style: GoogleFonts.montserrat(
+                fontSize: 15,
+                color: Colors.black,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
             TextSpan(
                 text: 'Aspen',
                 style: GoogleFonts.montserrat(
                     fontSize: 30,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black))
           ])),
         ),
@@ -42,12 +46,15 @@ class _HeaderHomePageState extends State<HeaderHomePage> {
                 child: Text(
                   'Aspen, USA',
                   style: TextStyle(
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
                     color: Colors.black87,
                   ),
                 ),
               ),
-              Icon(Icons.arrow_drop_down)
+              Icon(
+                Icons.arrow_drop_down,
+                color: Colors.blue,
+              )
             ],
           ),
         ),

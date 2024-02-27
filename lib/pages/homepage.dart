@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/components/category_homepage.dart';
 import 'package:flutter_application_3/components/header_hompage.dart';
 import 'package:flutter_application_3/components/search_homepage.dart';
 
@@ -21,98 +22,11 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 HeaderHomePage(),
-                const SizedBox(height: 20),
+                SizedBox(height: 20),
                 SearchHomePage(),
-                const SizedBox(height: 20),
-                SingleChildScrollView(
-                  child: Container(
-                    height: 50,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      shrinkWrap: true,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 50),
-                          child: InkWell(
-                            splashColor: Colors.grey,
-                            highlightColor: Colors.blueAccent,
-                            borderRadius: BorderRadius.circular(15),
-                            onTap: () {},
-                            onFocusChange: (hasFocus) {},
-                            child: const Center(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text('Locations'),
-                            )),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 50),
-                          child: InkWell(
-                            splashColor: Colors.grey,
-                            highlightColor: Colors.blueAccent,
-                            borderRadius: BorderRadius.circular(15),
-                            onTap: () {},
-                            onFocusChange: (hasFocus) {},
-                            child: const Center(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text('Hotels'),
-                            )),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 50),
-                          child: InkWell(
-                            splashColor: Colors.grey,
-                            highlightColor: Colors.blueAccent,
-                            borderRadius: BorderRadius.circular(15),
-                            onTap: () {},
-                            onFocusChange: (hasFocus) {},
-                            child: const Center(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text('Food'),
-                            )),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 50),
-                          child: InkWell(
-                            splashColor: Colors.grey,
-                            highlightColor: Colors.blueAccent,
-                            borderRadius: BorderRadius.circular(15),
-                            onTap: () {},
-                            onFocusChange: (hasFocus) {},
-                            child: const Center(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text('Adventure'),
-                            )),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 50),
-                          child: InkWell(
-                            splashColor: Colors.grey,
-                            highlightColor: Colors.blueAccent,
-                            borderRadius: BorderRadius.circular(15),
-                            onTap: () {},
-                            onFocusChange: (hasFocus) {},
-                            child: const Center(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text('Vacation'),
-                            )),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
+                CategoryHomePage(),
+                SizedBox(height: 20),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [

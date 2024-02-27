@@ -27,6 +27,12 @@ class _SearchHomePageState extends State<SearchHomePage> {
               color: Color.fromARGB(255, 243, 248, 254),
             ),
           ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(30),
+            borderSide: BorderSide(
+              color: Color.fromARGB(255, 243, 248, 254),
+            ),
+          ),
           contentPadding: const EdgeInsets.symmetric(vertical: 15),
         ),
       ),
