@@ -3,6 +3,7 @@ import 'package:flutter_application_3/components/card_popular.dart';
 import 'package:flutter_application_3/components/card_recommended.dart';
 import 'package:flutter_application_3/components/category_homepage.dart';
 import 'package:flutter_application_3/components/header_hompage.dart';
+import 'package:flutter_application_3/components/navbar.dart';
 import 'package:flutter_application_3/components/search_homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -64,6 +65,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+      bottomNavigationBar: Navbar(),
     );
   }
 }
