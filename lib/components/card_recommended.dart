@@ -71,7 +71,7 @@ class _CardRecommendedState extends State<CardRecommended> {
                         ),
                         Positioned(
                           right: 20,
-                          top: 100,
+                          top: 90,
                           child: Center(
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(

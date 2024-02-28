@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/pages/homepage.dart';
 
-class Apalah extends StatelessWidget {
-  const Apalah({super.key});
+class SubScreen extends StatelessWidget {
+  const SubScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class Apalah extends StatelessWidget {
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+            padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
             child: Column(
               children: [
                 Stack(
@@ -266,33 +266,26 @@ class Apalah extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                const SizedBox(height: 20),
                 Container(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, bottom: 10),
-                          child: Column(
-                            children: const [
-                              Text('Price'),
-                              Text(
-                                '\$199',
-                                style: TextStyle(
-                                    fontSize: 25,
-                                    color: Colors.green,
-                                    fontWeight: FontWeight.w800),
-                              )
-                            ],
-                          ),
+                        Column(
+                          children: const [
+                            Text('Price'),
+                            Text(
+                              '\$199',
+                              style: TextStyle(
+                                  fontSize: 25,
+                                  color: Colors.green,
+                                  fontWeight: FontWeight.w800),
+                            )
+                          ],
                         ),
-                        const SizedBox(
-                          height: 30,
-                        ),
+                        SizedBox(height: 30),
                         Container(
                           width: 200,
                           height: 50,
@@ -309,7 +302,7 @@ class Apalah extends StatelessWidget {
                             ),
                             onPressed: () {},
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.end,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: const [
                                 Text(
@@ -331,9 +324,6 @@ class Apalah extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
-                          height: 20,
-                        )
                       ],
                     ),
                   ),

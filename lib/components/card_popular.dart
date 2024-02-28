@@ -39,7 +39,7 @@ class _CardPopularState extends State<CardPopular> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Apalah(),
+                              builder: (context) => SubScreen(),
                             ),
                           );
                         },
@@ -57,15 +57,14 @@ class _CardPopularState extends State<CardPopular> {
                           child: Row(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(bottom: 10),
+                                padding: EdgeInsets.only(left: 10, bottom: 10),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Container(
-                                      alignment: Alignment.bottomLeft,
-                                      child: Padding(
-                                        padding: EdgeInsets.only(left: 5),
+                                    SizedBox(
+                                      height: 30,
+                                      child: Container(
                                         child: ElevatedButton(
                                           style: ElevatedButton.styleFrom(
                                             minimumSize: Size(10, 30),
@@ -77,56 +76,48 @@ class _CardPopularState extends State<CardPopular> {
                                                 Color.fromARGB(255, 77, 86, 82),
                                           ),
                                           onPressed: () {},
-                                          child: Row(
-                                            children: [
-                                              Text(
-                                                location[index],
-                                                style: GoogleFonts.montserrat(
-                                                  fontSize: 13,
-                                                  color: Colors.white,
-                                                  fontWeight: FontWeight.w600,
-                                                ),
-                                              ),
-                                            ],
+                                          child: Text(
+                                            location[index],
+                                            style: GoogleFonts.montserrat(
+                                              fontSize: 13,
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.w600,
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Container(
-                                      child: Padding(
-                                        padding:
-                                            EdgeInsets.only(left: 5, top: 5),
-                                        child: ElevatedButton(
-                                          style: ElevatedButton.styleFrom(
-                                            minimumSize: Size(10, 30),
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
+                                      child: ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                          minimumSize: Size(10, 30),
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(15),
+                                          ),
+                                          backgroundColor:
+                                              Color.fromARGB(255, 77, 86, 82),
+                                        ),
+                                        onPressed: () {},
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                right: 5,
+                                              ),
+                                              child: Icon(
+                                                Icons.star,
+                                                size: 20,
+                                                color: Colors.amber,
+                                              ),
                                             ),
-                                            backgroundColor:
-                                                Color.fromARGB(255, 77, 86, 82),
-                                          ),
-                                          onPressed: () {},
-                                          child: Row(
-                                            children: [
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  right: 5,
-                                                ),
-                                                child: Icon(
-                                                  Icons.star,
-                                                  size: 20,
-                                                  color: Colors.amber,
-                                                ),
-                                              ),
-                                              Text(
-                                                '4.1',
-                                                style: GoogleFonts.montserrat(
-                                                    fontSize: 13,
-                                                    color: Colors.white),
-                                              ),
-                                            ],
-                                          ),
+                                            Text(
+                                              '4.1',
+                                              style: GoogleFonts.montserrat(
+                                                  fontSize: 13,
+                                                  color: Colors.white),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ),
