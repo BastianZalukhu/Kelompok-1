@@ -28,10 +28,11 @@ class Apalah extends StatelessWidget {
                           child: Positioned(
                             child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(55, 55),
                                     backgroundColor: Colors.white,
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
-                                            BorderRadius.circular(15)),
+                                            BorderRadius.circular(10)),
                                     padding: const EdgeInsets.only(
                                       top: 15,
                                       bottom: 15,
@@ -43,26 +44,26 @@ class Apalah extends StatelessWidget {
                                           builder: (context) => HomePage()));
                                 },
                                 child: const Icon(
-                                  Icons.arrow_back,
+                                  Icons.keyboard_arrow_left,
                                   color: Colors.grey,
                                 )),
                           ),
                         ),
-                        Positioned(
-                          bottom: -10,
-                          right: 15,
+                        Padding(
+                          padding: const EdgeInsets.only(top: 310, left: 260),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
+                              elevation: 15,
                               backgroundColor: Colors.white,
-                              minimumSize: Size(65, 65),
-                              maximumSize: Size(115, 115),
+                              minimumSize: Size(55, 55),
+                              maximumSize: Size(105, 105),
                               shape: CircleBorder(side: BorderSide.none),
                             ),
                             onPressed: () {},
                             child: const Icon(
                               Icons.favorite,
                               color: Colors.red,
-                              size: 35,
+                              size: 30,
                             ),
                           ),
                         ),
@@ -83,7 +84,10 @@ class Apalah extends StatelessWidget {
                         ),
                         Text(
                           'Show map',
-                          style: TextStyle(fontSize: 15, color: Colors.blue),
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.blue,
+                              fontWeight: FontWeight.w800),
                         ),
                       ],
                     ),
@@ -92,14 +96,21 @@ class Apalah extends StatelessWidget {
                     height: 10,
                   ),
                   Container(
-                    margin: const EdgeInsets.only(left: 10),
+                    margin: EdgeInsets.only(left: 20),
                     child: Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.star,
                           color: Colors.amber,
+                          size: 15,
                         ),
-                        Text('4.5 (355 Reviews)')
+                        Padding(
+                          padding: EdgeInsets.only(left: 5),
+                          child: Text(
+                            '4.5 (355 Reviews)',
+                            style: TextStyle(color: Colors.grey.shade400),
+                          ),
+                        )
                       ],
                     ),
                   ),
@@ -134,11 +145,13 @@ class Apalah extends StatelessWidget {
                           Text(
                             'Read more',
                             style: TextStyle(
-                              color: Colors.blue,
-                              decoration: TextDecoration.underline,
-                            ),
+                                color: Colors.blue,
+                                fontWeight: FontWeight.w800),
                           ),
-                          Icon(Icons.arrow_right),
+                          Icon(
+                            Icons.keyboard_arrow_down,
+                            color: Colors.blue,
+                          ),
                         ],
                       ),
                       onTap: () {},
@@ -155,7 +168,7 @@ class Apalah extends StatelessWidget {
                           Text(
                             'Facilities',
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.w400),
+                                fontSize: 20, fontWeight: FontWeight.w800),
                           ),
                         ],
                       )),
@@ -170,7 +183,7 @@ class Apalah extends StatelessWidget {
                         height: 70,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Colors.grey.shade300),
+                            color: Color.fromARGB(255, 225, 234, 254)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -179,9 +192,13 @@ class Apalah extends StatelessWidget {
                               Icons.wifi,
                               color: Colors.grey,
                             ),
-                            Text(
-                              'Wifi',
-                              style: TextStyle(color: Colors.grey),
+                            Padding(
+                              padding: EdgeInsets.only(top: 7),
+                              child: Text(
+                                'Wifi',
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
                             )
                           ],
                         ),
@@ -191,15 +208,19 @@ class Apalah extends StatelessWidget {
                         height: 70,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Colors.grey.shade300),
+                            color: Color.fromARGB(255, 225, 234, 254)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: const [
                             Icon(Icons.dinner_dining, color: Colors.grey),
-                            Text(
-                              'Dinner',
-                              style: TextStyle(color: Colors.grey),
+                            Padding(
+                              padding: EdgeInsets.only(top: 7),
+                              child: Text(
+                                'Dinner',
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
                             )
                           ],
                         ),
@@ -209,15 +230,19 @@ class Apalah extends StatelessWidget {
                         height: 70,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Colors.grey.shade300),
+                            color: Color.fromARGB(255, 225, 234, 254)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: const [
                             Icon(Icons.hot_tub, color: Colors.grey),
-                            Text(
-                              'Tub',
-                              style: TextStyle(color: Colors.grey),
+                            Padding(
+                              padding: EdgeInsets.only(top: 7),
+                              child: Text(
+                                'Tub',
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
                             )
                           ],
                         ),
@@ -227,15 +252,19 @@ class Apalah extends StatelessWidget {
                         height: 70,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Colors.grey.shade300),
+                            color: Color.fromARGB(255, 225, 234, 254)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: const [
                             Icon(Icons.pool, color: Colors.grey),
-                            Text(
-                              'Pool',
-                              style: TextStyle(color: Colors.grey),
+                            Padding(
+                              padding: EdgeInsets.only(top: 7),
+                              child: Text(
+                                'Pool',
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
                             )
                           ],
                         ),
@@ -251,48 +280,57 @@ class Apalah extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
-                            children: const [
-                              Text('Price'),
-                              Text(
-                                '\$199',
-                                style: TextStyle(
-                                    fontSize: 25,
-                                    color: Colors.green,
-                                    fontWeight: FontWeight.w800),
-                              )
-                            ],
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(left: 10, bottom: 10),
+                            child: Column(
+                              children: const [
+                                Text('Price'),
+                                Text(
+                                  '\$199',
+                                  style: TextStyle(
+                                      fontSize: 25,
+                                      color: Colors.green,
+                                      fontWeight: FontWeight.w800),
+                                )
+                              ],
+                            ),
                           ),
                           const SizedBox(
                             height: 30,
                           ),
-                          Container(
-                            width: 250,
-                            height: 70,
-                            decoration: BoxDecoration(
-                                color: Colors.blueAccent,
-                                borderRadius: BorderRadius.circular(15)),
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(15))),
-                              onPressed: () {},
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
-                                  Text(
-                                    'Book Now',
-                                    style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w400,
-                                        color: Colors.white),
-                                  ),
-                                  Icon(
-                                    Icons.arrow_right_alt_outlined,
-                                    size: 30,
-                                  )
-                                ],
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(bottom: 15, left: 15),
+                            child: Container(
+                              width: 200,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  color: Colors.blueAccent,
+                                  borderRadius: BorderRadius.circular(15)),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(15))),
+                                onPressed: () {},
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: const [
+                                    Text(
+                                      'Book Now',
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                          color: Colors.white),
+                                    ),
+                                    Icon(
+                                      Icons.arrow_right_alt_outlined,
+                                      size: 30,
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
