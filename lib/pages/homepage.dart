@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                         'Recommended',
                         style: GoogleFonts.montserrat(
                             fontSize: 25,
-                            fontWeight: FontWeight.w900,
+                            fontWeight: FontWeight.w700,
                             color: Colors.black),
                       ),
                     ],
