@@ -56,81 +56,86 @@ class _CardPopularState extends State<CardPopular> {
                           ),
                           child: Row(
                             children: [
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    alignment: Alignment.bottomLeft,
-                                    child: Padding(
-                                      padding: EdgeInsets.only(left: 5),
-                                      child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                          minimumSize: Size(10, 30),
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(15),
-                                          ),
-                                          backgroundColor:
-                                              Color.fromARGB(255, 77, 86, 82),
-                                        ),
-                                        onPressed: () {},
-                                        child: Row(
-                                          children: [
-                                            Text(
-                                              location[index],
-                                              style: GoogleFonts.montserrat(
-                                                fontSize: 13,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w600,
-                                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 10),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.bottomLeft,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(left: 5),
+                                        child: ElevatedButton(
+                                          style: ElevatedButton.styleFrom(
+                                            minimumSize: Size(10, 30),
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
                                             ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: EdgeInsets.only(left: 5),
-                                      child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                          minimumSize: Size(10, 30),
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(15),
+                                            backgroundColor:
+                                                Color.fromARGB(255, 77, 86, 82),
                                           ),
-                                          backgroundColor:
-                                              Color.fromARGB(255, 77, 86, 82),
-                                        ),
-                                        onPressed: () {},
-                                        child: Row(
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsets.only(
-                                                right: 5,
-                                              ),
-                                              child: Icon(
-                                                Icons.star,
-                                                size: 20,
-                                                color: Colors.amber,
-                                              ),
-                                            ),
-                                            Text(
-                                              '4.1',
-                                              style: GoogleFonts.montserrat(
+                                          onPressed: () {},
+                                          child: Row(
+                                            children: [
+                                              Text(
+                                                location[index],
+                                                style: GoogleFonts.montserrat(
                                                   fontSize: 13,
-                                                  color: Colors.white),
-                                            ),
-                                          ],
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w600,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    Container(
+                                      child: Padding(
+                                        padding:
+                                            EdgeInsets.only(left: 5, top: 5),
+                                        child: ElevatedButton(
+                                          style: ElevatedButton.styleFrom(
+                                            minimumSize: Size(10, 30),
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                            ),
+                                            backgroundColor:
+                                                Color.fromARGB(255, 77, 86, 82),
+                                          ),
+                                          onPressed: () {},
+                                          child: Row(
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsets.only(
+                                                  right: 5,
+                                                ),
+                                                child: Icon(
+                                                  Icons.star,
+                                                  size: 20,
+                                                  color: Colors.amber,
+                                                ),
+                                              ),
+                                              Text(
+                                                '4.1',
+                                                style: GoogleFonts.montserrat(
+                                                    fontSize: 13,
+                                                    color: Colors.white),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                                padding:
+                                    const EdgeInsets.only(left: 40, bottom: 10),
                                 child: Container(
                                   alignment: Alignment.bottomRight,
                                   child: ElevatedButton(

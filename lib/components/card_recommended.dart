@@ -25,7 +25,7 @@ class _CardRecommendedState extends State<CardRecommended> {
         children: [
           Expanded(
             child: SizedBox(
-              height: 150,
+              height: 160,
               child: ListView.builder(
                 itemCount: location_recommended.length,
                 scrollDirection: Axis.horizontal,
@@ -71,7 +71,7 @@ class _CardRecommendedState extends State<CardRecommended> {
                         ),
                         Positioned(
                           right: 20,
-                          bottom: 20,
+                          top: 100,
                           child: Center(
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
