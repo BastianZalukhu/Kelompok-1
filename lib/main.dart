@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/test.dart';
-import 'package:flutter_application_3/test2.dart';
+import 'package:flutter_application_3/coverPage.dart';
+// import 'package:flutter_application_3/test.dart';
+// import 'package:flutter_application_3/test2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: coverPage(),
     );
   }
 }
