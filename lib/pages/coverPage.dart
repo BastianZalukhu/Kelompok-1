@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/pages/homepage.dart';
+import 'package:ASPEN_FGD_1/pages/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class coverPage extends StatelessWidget {
@@ -94,16 +94,13 @@ class description extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
-          SizedBox(
-            height: 50,
-            child: Text(
-              descriptionApp2,
-              textAlign: TextAlign.left,
-              style: GoogleFonts.montserrat(
-                color: Colors.white,
-                fontSize: 40,
-                fontWeight: FontWeight.w500,
-              ),
+          Text(
+            descriptionApp2,
+            textAlign: TextAlign.left,
+            style: GoogleFonts.montserrat(
+              color: Colors.white,
+              fontSize: 40,
+              fontWeight: FontWeight.w500,
             ),
           ),
           Text(
@@ -117,7 +114,7 @@ class description extends StatelessWidget {
           )
         ],
       ),
-      margin: EdgeInsets.only(top: 570, left: 32),
+      margin: EdgeInsets.only(top: 553, left: 32),
     );
   }
 }
@@ -129,7 +126,7 @@ class buttonCover extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 60),
+      margin: EdgeInsets.only(bottom: 50),
       alignment: Alignment.bottomCenter,
       child: SizedBox(
         height: 52,

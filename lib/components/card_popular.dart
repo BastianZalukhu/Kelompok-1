@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/pages/sub_screen.dart';
+import 'package:ASPEN_FGD_1/pages/sub_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CardPopular extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/pages/homepage.dart';
+import 'package:ASPEN_FGD_1/pages/homepage.dart';
 
 class SubScreen extends StatelessWidget {
   const SubScreen({super.key});
@@ -19,7 +19,8 @@ class SubScreen extends StatelessWidget {
                       child: Image.asset(
                         'assets/gambar1.png',
                         fit: BoxFit.cover,
-                        width: 500,
+                        width: 335,
+                        height: 340,
                       ),
                     ),
                     Padding(
@@ -49,7 +50,7 @@ class SubScreen extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 340, left: 280),
+                      padding: const EdgeInsets.only(top: 310, left: 260),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           elevation: 5,
@@ -59,10 +60,14 @@ class SubScreen extends StatelessWidget {
                           shape: CircleBorder(side: BorderSide.none),
                         ),
                         onPressed: () {},
-                        child: const Icon(
-                          Icons.favorite,
-                          color: Colors.red,
-                          size: 30,
+                        child: Padding(
+                          padding: const EdgeInsets.all(0),
+                          child: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                            size: 27.5,
+                            weight: 10,
+                          )
                         ),
                       ),
                     ),
@@ -70,7 +75,7 @@ class SubScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, right: 15),
+                  padding: const EdgeInsets.all(0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
@@ -92,7 +97,6 @@ class SubScreen extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 20),
                   child: Row(
                     children: [
                       Icon(
@@ -114,18 +118,20 @@ class SubScreen extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
-                      Text(
-                        ' Aspen is as close as one can get to a storybook \n\n alpine town in America. The choose-your-own- \n\n adventure possibilities—skiing, hiking, dining \n\n shopping and ....',
+                      Expanded(child: Text(
+                        'Aspen is as close as one can get to a storybook alpine town in America. The choose-your-own-  adventure possibilities—skiing, hiking, dining shopping and ....',
+                        textAlign: TextAlign.justify,
                         style: TextStyle(
-                          height: 0.6,
+                          height: 1.5,
                           color: Colors.black,
                           fontSize: 15,
                         ),
                       ),
+                      ),
+                      
                     ],
                   ),
                 ),
@@ -133,7 +139,6 @@ class SubScreen extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 15),
                   child: GestureDetector(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -153,10 +158,9 @@ class SubScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 Container(
-                    margin: EdgeInsets.only(left: 15),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const [
